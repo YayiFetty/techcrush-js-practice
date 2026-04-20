@@ -1,7 +1,9 @@
 function summarizeStudents() {
   return students.map((student) => {
     let grade;
-    switch (true) {
+    switch (
+      true // switch(true) is used to evaluate conditions like if/else statements
+    ) {
       case student.score >= 70 && student.score <= 100:
         grade = "A";
         break;
